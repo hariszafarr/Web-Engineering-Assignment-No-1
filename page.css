@@ -1,0 +1,863 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./app/page.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+.app{
+    position: relative;
+    transition: all 300ms ease-out;
+}
+.tag{
+    color:var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.title{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--title-color);
+    text-align: center;
+    line-height: 3.5rem;
+    text-transform: capitalize;
+
+}
+.description{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 2rem;
+
+}
+.sec-title{
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: 600;
+    text-align: center;
+    line-height: 3rem;
+    text-transform: capitalize;
+}
+.text{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+@media (max-with:768px) {
+    .title{
+        font-size: 2.2rem;
+    }
+    .sec-title{
+        font-size: 1.8rem;
+    }
+    .description{
+        font-size: 1.2rem;
+    }
+    
+}
+@media (max-with:768px) {
+    .title{
+        font-size: 1.8rem;
+    }
+    .sec-title{
+        font-size: 1.6rem;
+    }
+    
+    
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/Navbar/Navbar.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.navbar-wrapper{
+    background-color: var(--primary-color);
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+.sticky{
+    position: fixed;
+    box-shadow: 10px 12px 48px rgba(181, 187, 203, 206);
+    background-color: white;
+    top: 0;
+}
+.navbar-container{
+    padding: 1.5rem 2rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.sticky .navbar-container{
+    color: var(--title-color);
+    padding: 1rem;
+}
+.navbar-logo{
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+.navbar-right{
+ 
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 0.9rem;
+    margin-left: 5rem;
+}
+.navbar-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.navbar-item span{
+    cursor: pointer;
+}
+.fund-button{
+    color: var(--dark-bg);
+    background-color: var(--third-color);
+    padding: 1rem 1.6rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 999px;
+}
+.mobile-nav-container{
+    display: none;
+}
+@media (max-width: 1200px) {
+    .navbar-container{
+        display: none;
+    }
+    .mobile-nav-container{
+        cursor: pointer;
+        display: block;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        position: relative;
+        background-color: var(--primary-color);
+    }
+    .mobile-nav-container>:nth-child(1){
+        font-weight: bold;
+    }
+    .mobile-navbar-menu{
+        position: fixed;
+        top: 3.9rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+        display: flex;
+        left: 0;
+        transform: translateX(-150%);
+        background-color: var(--primary-color);
+        transition: all 300ms ease-out;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.2rem;
+        z-index: 99;
+        height: calc(100vh);
+    }
+    .mobile-navbar-menu a{
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .mobile-fund-button{
+        width: 100%;
+        background-color: var(--third-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        box-sizing: border-box;
+        padding: 1rem 0rem;
+        color: var(--dark-bg);
+    }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/Hero/Hero.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.hero-wrapper{
+    background-color: var(--primary-color);
+    height: 180vh;
+    overflow: hidden;
+
+}
+.hero-wrapper .container{
+    padding-top: 8rem;
+}
+.hero-arrow{
+    position: absolute;
+    top:5rem;
+    max-width: 100%;
+    z-index: 0;
+    
+    
+}
+.hero-container{
+    display: flex;
+    height: 85vh;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+/* hero left side  */
+.left-side{
+    flex: 1 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 3rem;
+}
+.img-row{
+    display: flex;
+    gap: 2rem;
+
+}
+.person-pill{
+    height: 14rem;
+    width: 6rem;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.person-pill-bg{
+    border-radius: 999px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.person-pill-bg>img{
+    width: 100%;
+    object-fit: cover;
+    scale: 2;
+    margin-top: 4rem;
+}
+.img-row>:nth-child(2){
+    transform: translateY(-3rem);
+}
+/* hero right side  */
+.right-side{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--third-color);
+    font-size: 4rem;
+    font-weight: bold;
+    
+}
+.hero-title >:nth-child(3){
+    color: white;
+}
+.hero-des{
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+@media (max-width: 1024px) {
+    .hero-wrapper{
+        height: max-content;
+    }
+    .hero-container .container{
+        padding-top: 5rem;
+    }
+    .hero-container{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap:4rem;
+        padding-bottom: 3rem;
+    }
+    .hero-arrow{
+        display: none;
+    }
+    .right-side{
+        flex: 1 1;
+        align-items: center;
+    }
+    .hero-title{
+        align-items: center;
+        font-size: 2.2rem;
+    }
+    .hero-des{
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+    }
+    
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/EmailBox/EmailBox.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.email-box{
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+.email-box>input{
+    outline: none;
+    border: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: rgba(150,150,150);
+    font-family: '__Josefin_Sans_584c1b', '__Josefin_Sans_Fallback_584c1b';;
+    flex: 1 1;
+}
+.email-box>input::placeholder{
+    font-size: 0.8rem;
+}
+.funded-btn{
+    position: absolute;
+    right: 0.5rem;
+    height: 80%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 2rem;
+    border-radius: 999px;
+    color: white;
+    cursor: pointer;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/BrandingVideo/BrandingVideo.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+.branding-video-container{
+    border-radius: none;
+}.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: visible; */
+    overflow: visible;
+}
+.brandingVideo{
+    width: 95%;
+    border-radius: 4rem;
+    margin-top: -10rem;
+    z-index: 1;
+}
+@media (max-width:1024px) {
+    .brandingVideo{
+        margin-top: 1rem;
+    }
+    
+}
+@media (max-width:768px) {
+    .brandingVideo{
+        border-radius: 2rem;
+    }
+    
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/WhatWeDO/WhatWeDo.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.WhatWeDo-wrapper{
+    position: relative;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.WhatWeDo-container{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+.blocks{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}   
+.block{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 2rem;
+}
+.block-features{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.block-feature{
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border: 1px solid hsla(0, 0%, 59%, 0.17);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--title-color);
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: rgb(247, 247, 247);
+}
+.block:nth-child(1)>.block-features>:nth-child(2){
+    margin-top: 3rem;
+}
+.block:nth-of-type(2) > .block-features>:nth-child(1),
+.block:nth-of-type(2) > .block-features>:nth-child(3){
+margin-top: 3rem;
+}
+.support{
+    display: flex;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    background: white;
+    
+}
+.support>div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+.left-side{
+    flex: 1 1;
+}
+.right-side{
+    flex: 1.6 1;
+}
+@media (max-width:990px) {
+    .blocks{
+      
+        flex-direction: column  ;
+    }
+    
+}
+@media (max-width:768px) {
+    .support{
+      
+        flex-direction: column  ;
+    }
+    
+}   
+@media (max-width:990px) {
+    .blocks{
+        width: 88%;
+        margin: auto;
+    }
+    .block-features{
+        flex-direction: column;
+    }
+    .block-feature{
+        margin-top: 0rem, im !important; 
+    }
+    
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/OurDifference/OurDifference.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+.diff-wrapper{
+    padding-top: 15rem;
+}
+.diff-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.diff-head{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+}
+.diff-head .tag{
+    color: white;
+    text-transform: capitalize;
+}
+.diff-head .text{
+    color: white;
+    text-align: center;
+    width: 65%;
+}
+.diff-features{
+    display: flex;
+    gap: 2rem;
+    /* margin-bottom: 10rem; */
+}
+.diff-feature{
+    flex: 1 1;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    gap: 1rem;
+    padding: 2rem;
+}
+.diff-feature .text{
+    text-align: center;
+}
+@media (max-width:990px) {
+    .diff-features{
+        flex-direction: column;
+    }
+    
+}
+@media (max-width:590px) {
+    .diff-feature{
+        width: 80%;
+        margin: auto;
+    }
+    
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/HowItWork/HowItWork.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.how-wrapper {
+  padding-top: 13rem;
+ 
+}
+.how-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  max-width: 35rem;
+  margin: auto;
+}
+/* .head .title{
+    display: flex
+} */
+/* .tag{
+    color: black;
+} */
+.how-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.how-feature {
+  max-width: 38rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-bg);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  width: max-content;
+}
+.how-feature .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  translate: -18% 0rem;
+}
+.how-feature .detail > :nth-child(1) {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.how-feature:nth-of-type(2) {
+  margin-left: 10rem;
+}
+.how-feature:nth-of-type(1),
+.how-feature:nth-of-type(3) {
+  margin-right: 5rem;
+}
+@media (max-width: 1180px) {
+  .how-feature {
+    max-width: 70%;
+  }
+  .how-container{
+    max-width: 100%;
+  }
+  .how-feature:nth-of-type(2) {
+    margin-left:0rem;
+    /* display: flex; */
+    /* flex-direction: column-reverse; */
+    /* max-width: 30%; */
+  }
+  .how-feature:nth-of-type(1),
+  .how-feature:nth-of-type(3) {
+    margin-right: 0rem;
+    /* display: flex;
+    flex-direction: column-reverse;
+    max-width: 30%; */
+  }
+  .how-feature .detail {
+    translate: 0;
+  }
+  .how-feature .icon img {
+    translate: 0;
+  }
+}
+@media (max-width:576px) {
+    .how-feature{
+        flex-direction: column-reverse;
+    }
+    
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/WhoWeInvestIn/Invest.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.invest-wrapper .container{
+  padding-top: 13rem;
+}
+.invest-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.invest-container>div{
+    flex: 1 1;
+}
+.invest-left{
+ display: flex;
+ flex-direction:column;
+ gap: 2rem;
+}
+.invest-left .invest-head{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.invest-left .invest-head .title{
+    text-align: left;
+    color: white;
+
+}
+.invest-features{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.invest-feature{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 28rem;
+}
+.invest-feature .description{
+    color: var(--fourth-color);
+}
+.invest-feature .text{
+    color:white ;
+    text-align: justify;
+}
+.invest-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+
+}
+.invest-right img{
+    width: 100%;
+}
+@media (max-width:990px) {
+    .invest-container{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .invest-right{
+        align-self: center;
+        margin-top: 2rem;
+    }
+    .invest-right img{
+        max-width: 20rem;
+    }
+    
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/Testimonial/Testimonial.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.t-wrapper .container{
+    padding-top: 13rem;
+}
+.container{
+    /* background-color: aqua;
+    overflow: hidden; */
+}
+.t-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+}
+.t-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 50rem;
+}
+.slick{
+    display: flex;
+    flex-direction: column;
+}
+.slick-slider{
+    margin-top: 5rem;
+}
+.slick-track{
+    padding: 4rem 0rem;
+}
+.slick-slide > div{
+    padding: 0 20px;
+}
+.slick-dots{
+    bottom: 0px !important;
+}
+.s-comment{
+    display: flex !important;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 2rem;
+    gap: 3rem;
+    box-shadow: var(--shadow);
+}
+.content{
+    /* height: 200px; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.content span{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+}
+.comment-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.avatar{
+    background-color: #877eb5;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+}
+.person{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.person:nth-child(1){
+    font-weight: bold;
+}
+.person:nth-child(2){
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.688);
+    font-size: 0.8rem;
+}
+@media (max-width:1280px) {
+    .slick-slide.slick-active.slick-current + .slick-slide .comment{
+        transition: all 1000ms ease-out;
+        scale: 1.1;
+        transform: translateY(-30px);
+    }
+    
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/Footer/Footer.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.f-wrapper .container{
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    
+}
+.f-wrapper{
+    background-color: var(--primary-color);
+}
+.f-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 90%;
+}
+.f-container .title{
+    color: white;
+}
+.f-container .email-box{
+    max-width: 86rem;
+}
+.f-container hr{
+    border-color: var(--border-color-light);
+    width: 100%;
+}
+.f-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+@media (max-width:990px) {
+    .f-menu{
+        flex-direction: column; 
+        gap: 2rem;
+        align-items: center;
+    }
+    
+}
