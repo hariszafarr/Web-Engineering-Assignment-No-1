@@ -1,0 +1,111 @@
+.navbar-wrapper{
+    background-color: var(--primary-color);
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+.sticky{
+    position: fixed;
+    box-shadow: 10px 12px 48px rgba(181, 187, 203, 206);
+    background-color: white;
+    top: 0;
+}
+.navbar-container{
+    padding: 1.5rem 2rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.sticky .navbar-container{
+    color: var(--title-color);
+    padding: 1rem;
+}
+.navbar-logo{
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+.navbar-right{
+ 
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 0.9rem;
+    margin-left: 5rem;
+}
+.navbar-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.navbar-item span{
+    cursor: pointer;
+}
+.fund-button{
+    color: var(--dark-bg);
+    background-color: var(--third-color);
+    padding: 1rem 1.6rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 999px;
+}
+.mobile-nav-container{
+    display: none;
+}
+@media (max-width: 1200px) {
+    .navbar-container{
+        display: none;
+    }
+    .mobile-nav-container{
+        cursor: pointer;
+        display: block;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        position: relative;
+        background-color: var(--primary-color);
+    }
+    .mobile-nav-container>:nth-child(1){
+        font-weight: bold;
+    }
+    .mobile-navbar-menu{
+        position: fixed;
+        top: 3.9rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+        display: flex;
+        left: 0;
+        transform: translateX(-150%);
+        background-color: var(--primary-color);
+        transition: all 300ms ease-out;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.2rem;
+        z-index: 99;
+        height: calc(100vh);
+    }
+    .mobile-navbar-menu a{
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .mobile-fund-button{
+        width: 100%;
+        background-color: var(--third-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        box-sizing: border-box;
+        padding: 1rem 0rem;
+        color: var(--dark-bg);
+    }
+}
